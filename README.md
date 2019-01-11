@@ -41,3 +41,14 @@ let result = str => {
 考查的点：
 - const定义的引用类型，是否可以改变
 - es6新语法使用的熟练程度
+
+
+```flow
+st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
