@@ -2,7 +2,6 @@
 个人2018年前端面试和心得汇总：一是为了总结，二是为了培养自己描述问题，及回答这些问题的能力
 
 先整理部分吧
-### 1
 1. 了解ES6吗，对于数组，有哪些新的操作方法
 - 数组的新方法有isArray, filter
 - 还有一个新的类型Map，用来做数组去重
@@ -39,9 +38,10 @@ let result = str => {
   return res;
 }
 ```
-考查的点：
-- const定义的引用类型，是否可以改变
-- es6新语法使用的熟练程度
+  - 考查的点：
+    - const定义的引用类型，是否可以改变
+    - es6新语法使用的熟练程度
+
 - 第二种使用reduce
 ```js
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
@@ -55,15 +55,4 @@ var countedNames = names.reduce(function (allNames, name) {
   }
   return allNames;
 }, {});
-```
-
-
-```flow
-st=>start: Start
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-e=>end
-st->op->cond
-cond(yes)->e
-cond(no)->op
 ```
