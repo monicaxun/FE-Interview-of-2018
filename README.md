@@ -29,6 +29,7 @@ arr.sort(comparison("name"));
 ```
 
 3. 查找一个字符串内部不重复的字符的数目，使用es6的写法
+- 第一种es6的语法
 ```es6
 let result = str => {
   const res = {};
@@ -41,6 +42,20 @@ let result = str => {
 考查的点：
 - const定义的引用类型，是否可以改变
 - es6新语法使用的熟练程度
+- 第二种使用reduce
+```js
+var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+
+var countedNames = names.reduce(function (allNames, name) { 
+  if (name in allNames) {
+    allNames[name]++;
+  }
+  else {
+    allNames[name] = 1;
+  }
+  return allNames;
+}, {});
+```
 
 
 ```flow
